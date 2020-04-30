@@ -1,0 +1,36 @@
+body {
+  width: 100%;
+  height: 100%;
+  background-color: dimgray;
+  position: relative;
+}
+
+button {
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: firebrick;
+  position: fixed;
+  margin: 20px;
+  z-index: 99;
+  cursor: pointer;
+}
+
+.hi {
+  position: absolute;
+  width: 100%;
+  height: 400px;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  transition: 0.5s;
+}
+
+.hi.on {
+  margin-top: -410px;
+  transition: 0.5s;
+}
+
+.hi span {
+  font-size: 300px;
+}
