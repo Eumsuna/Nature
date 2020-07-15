@@ -1,0 +1,215 @@
+/* reset */
+* {
+  color: #333;
+  box-sizing: border-box;
+}
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+ul {
+  list-style: none;
+}
+a {
+  color: inherit;
+  text-decoration: none;
+}
+/* 바디 */
+.wrapper {
+  width: 1200px;
+  height: 700px;
+  margin: 0 auto;
+}
+/* 헤더 */
+header {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+h1 {
+  width: 200px;
+  height: 40px;
+  margin: 30px;
+}
+/* 헤더-네브 */
+nav {
+  width: 600px;
+  height: 160px;
+}
+nav .main_menu {
+  display: flex;
+  position: absolute;
+  top: 60px;
+  left: 47%;
+  z-index: 99;
+}
+.main_menu_contents,
+.sub_menu_contents {
+  width: 150px;
+  height: 40px;
+  text-align: center;
+}
+.main_menu_contents {
+  background-color: #1d8844;
+}
+
+.main_menu_contents a {
+  display: inline-block;
+  padding: 9px;
+  color: ivory;
+}
+.sub_menu {
+  overflow: hidden;
+  height: 0;
+  background-color: #434748b4;
+  transition: 0.5s;
+}
+
+.main_menu_contents:hover {
+  background-color: #56b875;
+}
+
+.sub_menu_contents:hover {
+  background-color: #85898ab0;
+}
+
+.sub_menu.on{
+height: 120px;
+}
+
+/* 슬라이더 */
+.slider {
+  width: 100%;
+  height: 300px;
+}
+.slider_window {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+}
+.slider_wrap {
+  position: absolute;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 0.5s;
+}
+/* 컨텐츠 */
+.contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+}
+.notice,
+.gallery,
+.banner {
+  width: 400px;
+  height: 100%;
+}
+.contents h3 {
+  width: 100%;
+  height: 20px;
+  margin: 15px;
+}
+
+/* 컨텐츠-공지사항 */
+.notice_wrapper {
+  margin: 27px;
+}
+.notice li {
+  padding: 3px;
+  display: flex;
+}
+.notice li a {
+  width: 80%;
+  position: relative;
+  display: inline;
+}
+
+/* 컨텐츠-갤러리 */
+.gallery .gallery_wrapper {
+  position: relative;
+  margin: 25px 29px;
+}
+.gallery img {
+  width: 100px;
+  height: 100px;
+  position: relative;
+  margin: 5px;
+}
+
+/* 컨텐츠-배너 */
+.banner img {
+  width: 350px;
+  height: 180px;
+  margin: 10px 25px;
+}
+/* 푸터 */
+footer {
+  width: 100%;
+  height: 100px;
+  display: flex;
+}
+footer h2 {
+  width: 120px;
+  position: relative;
+  top: 34px;
+}
+
+footer h2 img {
+  width: 100%;
+}
+
+.copyright {
+  height: 100%;
+  width: 960px;
+}
+
+.copyright p {
+  text-align: center;
+  line-height: 425%;
+}
+.family_site {
+  width: 130px;
+  height: 100px;
+}
+.sns_wrapper {
+  position: relative;
+  top: 30px;
+}
+
+.popup {
+  display: none;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  background-color: rgb(238, 238, 238);
+  top: 20%;
+  left: 35%;
+  z-index: 999;
+}
+.popup_wrapper {
+  margin: 30px;
+}
+
+.popup_wrapper p {
+  text-align: center;
+}
+
+.popup_wrapper button {
+  position: absolute;
+  top: 90%;
+  left: 82%;
+}
+
+.popup.on {
+  display: block;
+}

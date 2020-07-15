@@ -1,0 +1,44 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+
+body {
+
+}
+
+.wrapper{
+    margin: 0 auto;
+    width: 1000px;
+    height: 750px;
+}
+
+header{
+    width: 100%;
+    height: 100px;
+    background-color: cadetblue;
+}
+
+main {
+    width: 100%;
+    height: 550px;
+    background-color: aquamarine;
+}
+
+.slider {
+    width: 100%;
+    height: 350px;
+    background-color: blue;
+}
+.contents{
+    width: 100%;
+    height: 200px;
+}
+
+footer{
+    width: 100%;
+    height: 100px;
+    background-color: blueviolet;
+}

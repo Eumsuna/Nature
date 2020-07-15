@@ -4,8 +4,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-    <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/reset.css" />
+    <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/68362145bf.js"
       crossorigin="anonymous"
@@ -13,32 +13,77 @@
   </head>
   <body>
     <header>
-      <nav>
-        <h1>Rings</h1>
+      <h1 class="logo"><a href="#"> Rings</a></h1>
+      <nav class="menuContainer">
         <ul>
-          <li>Wedding</li>
-          <li>Gallery</li>
-          <li>Notice</li>
-          <li>Purchase</li>
-          <li>Location guide</li>
-          <li>Consultation</li>
+          <li class="menu">
+            <a href="#">Wedding</a>
+            <ul class="sub">
+              <li>sub</li>
+              <li>sub</li>
+              <li>sub</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">About</a>
+            <ul class="sub">
+              <li id="about">About</li>
+              <li id="photo">Photo Gallery</li>
+              <li>sub</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">Notice</a>
+            <ul class="sub">
+              <li>sub</li>
+              <li>sub</li>
+              <li>sub</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">Purchase</a>
+            <ul class="sub">
+              <li>sub</li>
+              <li>sub</li>
+              <li>sub</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">Location guide</a>
+            <ul class="sub">
+              <li>sub</li>
+              <li>sub</li>
+              <li>sub</li>
+            </ul>
+          </li>
+          <li class="menu">
+            <a href="#">Consultation</a>
+            <ul class="sub">
+              <li>sub</li>
+              <li>sub</li>
+              <li>sub</li>
+            </ul>
+          </li>
         </ul>
       </nav>
     </header>
     <main>
       <section class="section--1st">
-        <h2>About Us</h2>
-        <p>
-          It is a long established fact that a reader will be distracted by the
-          readable content of a page when looking at its layout. The point of
-          using Lorem Ipsum is that it has a more-or-less normal distribution of
-          letters, as opposed to using 'Content here, content here', making it
-          look like readable English. Many desktop publishing packages and web
-          page editors now use Lorem Ipsum as their default model text, and a
-          search for 'lorem ipsum' will uncover many web sites still in their
-          infancy. Various versions have evolved over the years, sometimes by
-          accident, sometimes on purpose (injected humour and the like).
-        </p>
+        <div class="sectionOneContent">
+          <h2>About Us</h2>
+          <p>
+            It is a long established fact that a reader will be distracted by
+            the readable content of a page when looking at its layout. The point
+            of using Lorem Ipsum is that it has a more-or-less normal
+            distribution of letters, as opposed to using 'Content here, content
+            here', making it look like readable English. Many desktop publishing
+            packages and web page editors now use Lorem Ipsum as their default
+            model text, and a search for 'lorem ipsum' will uncover many web
+            sites still in their infancy. Various versions have evolved over the
+            years, sometimes by accident, sometimes on purpose (injected humour
+            and the like).
+          </p>
+        </div>
       </section>
       <section class="section--2nd">
         <h2>Photo Gallery</h2>
@@ -63,7 +108,7 @@
       </section>
       <section class="section--3rd">
         <p>Your only precious moment</p>
-        <input type="button" value="Consultation" />
+        <input class="button" type="button" value="Consultation" />
       </section>
     </main>
     <footer>
@@ -77,5 +122,7 @@
         <i class="fab fa-facebook-f"></i>
       </span>
     </footer>
+    <aside class="top">Top</aside>
+    <script src="./js/script.js"></script>
   </body>
 </html>

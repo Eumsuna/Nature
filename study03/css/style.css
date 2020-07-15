@@ -6,7 +6,6 @@ body {
 }
 
 header {
-  display: flex;
   position: relative;
   width: 100%;
   height: 800px;
@@ -17,19 +16,32 @@ header {
 }
 
 nav {
+  position: absolute;
+  top: 0;
+  left: -100%;
   width: 300px;
   height: 100%;
   background-color: rgba(34, 34, 34, 0.507);
-  background-attachment: fixed;
+  padding-top: 115px;
+  transition: 0.3s;
+}
+nav.on {
+  left: 0;
 }
 
 h1 {
+  position: relative;
+  z-index: 9999;
+}
+h1 a {
   font-size: 90px;
   color: rgba(255, 241, 219, 0.795);
+  margin: 10px;
 }
-ul {
+ul.menu {
   position: absolute;
   top: 125px;
+  margin-left: 10px;
 }
 
 ul li {
@@ -57,6 +69,15 @@ main {
 .section--1st h2 {
   font-size: 50px;
   margin: 50px;
+}
+
+.sectionOneContent {
+  position: relative;
+  opacity: 0;
+  transition: 1s;
+}
+.sectionOneContent.active {
+  opacity: 1;
 }
 
 .section--1st p {
@@ -96,15 +117,46 @@ article h3 {
   width: 300px;
   height: 400px;
 }
+.article__wrap article {
+  transition: 0.5s;
+  opacity: 0;
+}
 
-article .small__img:nth-of-type(1) {
+article:nth-of-type(1) .small__img {
   background-image: url(../img/1.jpg);
   background-size: cover;
 }
 
-article .small__img:nth-of-type(2) {
-  background-image: url(../img/2.jpg);
+article:nth-of-type(2) .small__img {
+  background-image: url(../img/8.jpg);
   background-size: cover;
+}
+article:nth-of-type(3) .small__img {
+  background-image: url(../img/4.jpg);
+  background-size: cover;
+}
+article:nth-of-type(4) .small__img {
+  background-image: url(../img/5.jpg);
+  background-size: cover;
+}
+
+.article__wrap.active article:nth-of-type(1) {
+  animation: one 0.5s 0s forwards;
+}
+.article__wrap.active article:nth-of-type(2) {
+  animation: one 0.5s 0.2s forwards;
+}
+.article__wrap.active article:nth-of-type(3) {
+  animation: one 0.5s 0.4s forwards;
+}
+.article__wrap.active article:nth-of-type(4) {
+  animation: one 0.5s 0.6s forwards;
+}
+
+@keyframes one {
+  100% {
+    opacity: 1;
+  }
 }
 
 .section--3rd {
@@ -156,4 +208,30 @@ footer span i {
 
 footer p {
   font-size: 20px;
+}
+.menu {
+  margin-bottom: 15px;
+}
+.menu:hover .sub {
+  opacity: 1;
+  margin: 0;
+}
+
+.menu .sub {
+  opacity: 0;
+  margin: -55px;
+  transition: 0.3s;
+}
+
+aside {
+  cursor: pointer;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  position: fixed;
+  bottom: 50px;
+  right: 50px;
+  background: #fff;
 }

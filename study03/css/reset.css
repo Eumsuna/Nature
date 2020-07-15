@@ -132,7 +132,11 @@
     border-spacing: 0;
   }
   
-  a {
-    color: ;
+  a{
+    color: #b2bec3;
+  }
+
+  a:active {
+    color: #ffffff;
   }
   
