@@ -10,7 +10,9 @@
     <div class="container">
       <header>
         <h1>
-          <img src="./img/로고.png" alt="대한은행" />
+          <a href="#">
+            <img src="./img/로고.png" alt="대한은행" />
+          </a>
         </h1>
         <nav>
           <ul class="menu-wrap">
@@ -70,12 +72,24 @@
               <div class="gallery-button">갤러리</div>
             </div>
             <div class="article-wrap">
-              <article class="notice">
+              <article class="notice on">
                 <ul>
-                  <li>무슨무슨 안내</li>
-                  <li>무슨무슨 안내</li>
-                  <li>무슨무슨 안내</li>
-                  <li>무슨무슨 안내</li>
+                  <li class="popup-on">
+                    <a href="#">무슨무슨 안내 누르면 팝업</a>
+                    <span>2020.07.16</span>
+                  </li>
+                  <li>
+                    <a href="#">무슨무슨 안내</a>
+                    <span>2020.07.16</span>
+                  </li>
+                  <li>
+                    <a href="#">무슨무슨 안내</a>
+                    <span>2020.07.16</span>
+                  </li>
+                  <li>
+                    <a href="#">무슨무슨 안내</a>
+                    <span>2020.07.16</span>
+                  </li>
                 </ul>
               </article>
               <article class="gallery">
@@ -89,26 +103,47 @@
           </div>
         </section>
         <section class="banner">
-          <img src="./img/배너.jpg" alt="배너">
+          <a href="#">
+            <img src="./img/배너.jpg" alt="배너" />
+          </a>
         </section>
         <section class="go-to">
-          <img src="./img/바로가기.jpg" alt="대한은행 바로가기">
+          <a href="#">
+            <img src="./img/바로가기.jpg" alt="대한은행 바로가기" />
+          </a>
         </section>
       </div>
       <footer>
-        <h2></h2>
+        <h2>
+          <a href="#">
+            <img src="./img/아래로고.png" alt="대한은행" />
+          </a>
+        </h2>
         <div class="under-contents">
           <nav>
             <ul>
-              <li>개인</li>
-              <li>기업</li>
-              <li>금융상품</li>
-              <li>카드</li>
+              <li><a href="#">개인</a></li>
+              <li><a href="#">기업</a></li>
+              <li><a href="#">금융상품</a></li>
+              <li><a href="#">카드</a></li>
             </ul>
           </nav>
-          <div class="copyright"></div>
+          <div class="copyright">
+            <p>Copyright © 2018 tcpschool.co.,Ltd. All rights reserved.</p>
+          </div>
         </div>
       </footer>
+      <div class="popup">
+        <div class="popup-wrap">
+          <h3>무슨무슨 안내</h3>
+          <p>
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt,
+            veniam! Nulla ad sit nobis consequatur blanditiis reprehenderit
+            minus reiciendis vel!
+          </p>
+          <button class="popup-close">X닫기</button>
+        </div>
+      </div>
     </div>
     <script src="./js/script.js"></script>
   </body>
