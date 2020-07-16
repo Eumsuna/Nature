@@ -53,22 +53,31 @@ header nav {
 .main-menu-wrap {
   width: 150px;
   height: 30px;
-  padding: 5px;
   color: #fff;
   z-index: 999;
+  padding-top: 3px;
 }
 .sub-menu-wrap {
   height: 0;
-  padding-top: 3px;
-  /* overflow: hidden; */
+  padding-top: 5px;
+  overflow: hidden;
   transition: 0.3s;
 }
 .sub-menu {
   height: 30px;
-  width: 150px;
   padding: 5px;
-  background-color: #e66b27;
+  background-color: #e66a27de;
 }
+.main-menu-wrap:hover{
+  background-color:#009dff;
+  transition: 0.3s;
+}
+.sub-menu:hover {
+  background-color: #862f00de;
+  color: #fff;
+  transition: 0.3s;
+}
+
 
 /* 슬라이드 */
 .slider {

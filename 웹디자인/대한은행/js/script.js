@@ -10,6 +10,24 @@ var galleryBtn = document.querySelector(".gallery-button");
 var popupClose = document.querySelector(".popup-close");
 var popup = document.querySelector(".popup");
 var popupOn = document.querySelector(".popup-on");
+// 메뉴
+var subMenu = document.querySelectorAll(".sub-menu-wrap");
+var mainMenu = document.querySelectorAll(".main-menu-wrap");
+var menuWrap = document.querySelector(".menu-wrap");
+
+// 메뉴
+for (var i = 0; i < menuWrap.length; i++) {
+  menuWrap[i].addEventListener("mouseenter", function () {
+    for (var i = 0; i < subMenu.length; i++) {
+      subMenu[i].style.height = "125px";
+    }
+    mainMenu.addEventListener("mouseleave", function () {
+      for (var i = 0; i < subMenu.length; i++) {
+        subMenu[i].style.height = "0";
+      }
+    });
+  });
+}
 
 // 슬라이드
 var slideCounter = 0;
