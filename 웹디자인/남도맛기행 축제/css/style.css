@@ -1,0 +1,195 @@
+* {
+  box-sizing: border-box;
+  color: #222328;
+}
+html,
+body,
+ul,
+li,
+h1,
+h2,
+h3 {
+  margin: 0;
+  padding: 0;
+}
+ul,
+li {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 1000px;
+  height: 650px;
+  display: flex;
+  position: relative;
+}
+.main {
+  width: 75%;
+  height: 100%;
+}
+/* 헤더 */
+header {
+  width: 25%;
+  height: 100%;
+  background-color: #fdcb6e;
+}
+h1 {
+  width: 100%;
+  height: 60px;
+}
+h1 img {
+  margin: 10px 25px;
+}
+nav.up {
+  width: 200px;
+  margin: 30px auto;
+}
+.menu {
+  background-color: #ff9f43;
+}
+.main_menu {
+  display: flex;
+  position: relative;
+  text-align: center;
+  transition: 0.3s;
+}
+.main_menu > a {
+  font-size: 25px;
+  height: 40px;
+  margin: 0 auto;
+}
+.sub_wrap {
+  position: absolute;
+  background-color: #c8d6e5;
+  width: 150px;
+  left: 200px;
+  top: -20px;
+  display: none;
+}
+.sub {
+  font-size: 18px;
+  height: 30px;
+  transition: 0.3s;
+}
+.menu:hover .sub_wrap {
+  display: block;
+  z-index: 99;
+}
+.main_menu:hover {
+  background-color: #ff8716;
+}
+.sub:hover {
+  background-color: #8e9cac;
+}
+
+/* 슬라이드 */
+.slide {
+  width: 100%;
+  height: 350px;
+}
+.slide_window {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+.slide_wrap {
+  width: 100%;
+  height: 100%;
+  left: 0;
+  position: relative;
+  display: flex;
+  transition: 0.3s;
+}
+
+/* 컨텐츠 */
+.contents {
+  width: 100%;
+  height: 200px;
+  display: flex;
+  background-color: #ff9f43;
+}
+.contents section {
+  width: 33.3%;
+  height: 100px;
+}
+.gallery,
+.notice {
+  padding: 10px;
+}
+.notice ul,
+.img_wrap {
+  margin: 20px 0;
+}
+.notice li {
+  margin: 5px;
+}
+.notice span {
+  float: right;
+}
+.gallery img {
+  width: 70px;
+  height: 70px;
+}
+/* 푸터*/
+footer {
+  width: 100%;
+  height: 100px;
+  background-color: #8b8b8b;
+  display: flex;
+}
+h2 img {
+  width: 150px;
+  margin: 30px 0;
+}
+.under_contents {
+  width: 600px;
+}
+.under_nav {
+  width: 100%;
+}
+.under_menu ul {
+  display: flex;
+  width: 80%;
+  margin: 0 auto;
+}
+.under_menu li {
+  margin: 15px auto 0;
+}
+.copyright {
+  text-align: center;
+  line-height: 2;
+}
+
+.popup {
+  width: 400px;
+  height: 400px;
+  background-color: #fff;
+  border: 2px black solid;
+  padding: 30px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -200px -200px 0;
+  display: none;
+}
+.popup_wrap {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+.popup h4 {
+  font-size: 30px;
+}
+.popup p {
+  text-align: center;
+}
+.popup button {
+  position: absolute;
+  top: 80%;
+  left: 85%;
+}
+.popup.on{
+    display: block;
+}

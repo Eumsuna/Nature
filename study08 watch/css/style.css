@@ -1,0 +1,23 @@
+*{
+    font-family: 'Bungee Hairline', cursive;
+}
+body{
+    background: rgb(29, 29, 29);
+}
+.wrap{
+    line-height: 4.2;
+}
+.today {
+    text-align: center;
+    transition: 0.3s;
+    color: rgb(255, 199, 46);
+    font-size: 100px;
+    height: 70px;
+  }  
+
+.time {
+  text-align: center;
+  transition: 0.3s;
+  color: rgb(255, 199, 46);
+  font-size: 150px;
+}

@@ -16,12 +16,12 @@ var mainMenu = document.querySelectorAll(".main-menu-wrap");
 var menuWrap = document.querySelector(".menu-wrap");
 
 // 메뉴
-for (var i = 0; i < menuWrap.length; i++) {
-  menuWrap[i].addEventListener("mouseenter", function () {
+for (var i = 0; i < mainMenu.length; i++) {
+  mainMenu[i].addEventListener("mouseenter", function () {
     for (var i = 0; i < subMenu.length; i++) {
       subMenu[i].style.height = "125px";
     }
-    mainMenu.addEventListener("mouseleave", function () {
+    menuWrap.addEventListener("mouseleave", function () {
       for (var i = 0; i < subMenu.length; i++) {
         subMenu[i].style.height = "0";
       }
