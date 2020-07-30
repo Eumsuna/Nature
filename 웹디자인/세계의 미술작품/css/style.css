@@ -47,16 +47,17 @@ nav {
   width: 150px;
   height: 40px;
   background: #4a4948;
-  padding: 4px 0;
   transition: 0.3s;
 }
 .main_menu > a {
   font-size: 20px;
+  display: inline-block;
+  height: 40px;
+  line-height: 40px;
   color: #e0e0e0;
 }
 .sub_menu_wrap {
   background-color: #afafaf;
-  margin-top: 10px;
   height: 0;
   overflow: hidden;
   transition: 0.3s;
@@ -164,11 +165,14 @@ h2 img {
 }
 .popup_wrap {
   position: relative;
+  height: 100%;
+  width: 100%;
 }
 .popup_close {
   position: absolute;
-  top: 145%;
-  left: 85%;
+  bottom: 20px;
+  right: 20px;
+  width: 70px;
 }
 .popup.on {
   display: block;
